@@ -6,7 +6,9 @@ When you're at golang's official doc site, this extension will help you to show 
 So you don't need to scroll down that long list page anymore.
 
 After installed, you can try here:
+
 [https://golang.org/pkg/os/](https://golang.org/pkg/os/)
+
 [https://godoc.org/github.com/gin-gonic/gin](https://godoc.org/github.com/gin-gonic/gin)
 
 
