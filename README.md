@@ -15,3 +15,4 @@ https://chrome.google.com/webstore/detail/fjbnfgkjpcnhbhfdnegofefhgpjafjjl
 
 ![Snapshot](https://raw.githubusercontent.com/diankong/GoDocTooltip/master/snapshot_1280x800.png)
 
+MIT
