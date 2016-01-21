@@ -1,0 +1,20 @@
+{
+   "manifest_version": 2,
+   "name": "Go Doc Tooltip",
+   "short_name": "gdt",
+   "version": "0.0.1",
+   "description": "When you're at golang.org/pkg/*, show function's description as tooltip on function list",
+   "author": "butaixianran",
+   "icons": {
+      "128": "icon_128.png"
+   },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://golang.org/pkg/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
