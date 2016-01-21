@@ -3,7 +3,7 @@
    "name": "Go Doc Tooltip",
    "short_name": "gdt",
    "version": "0.0.3",
-   "description": "When you're at golang.org/pkg/*, show function's description as tooltip on function list",
+   "description": "When you're at golang's official doc site, it'll show function's description as tooltip on function list",
    "author": "butaixianran",
    "icons": {
       "128": "icon_128.png"
