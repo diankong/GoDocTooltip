@@ -2,6 +2,13 @@
   "use strict";
     console.log("run go doc tooltip");
 
+    //get location
+    var isGoDoc = false;
+    if (window.location.hostname === "godoc.org") {
+        isGoDoc = true;
+    }
+    console.log("isGoDoc: " + isGoDoc);
+
 
     //create a layer for tooltip
     var tooltip = document.createElement("div");
@@ -13,10 +20,16 @@
     tooltip.style.border = "1px solid #9E9E9E";
     tooltip.style.padding = "6px";
     tooltip.style["text-align"] = "left";
-    tooltip.style["margin-left"] = "20%";
-    tooltip.style["margin-right"] = "20%";
     //hide
     tooltip.style.display = "none";
+
+    if (isGoDoc) {
+        tooltip.style.right = 0;
+    }
+    else {
+        tooltip.style["margin-left"] = "20%";
+        tooltip.style["margin-right"] = "20%";
+    }
 
     //add tooltip to body
     document.body.appendChild(tooltip);
@@ -65,13 +78,26 @@
         }
         // console.log("id is: " + id);
 
-        var pre = document.querySelector("#"+id+" ~ pre");
+        var pre = null;
+        if (window.location.hostname === "godoc.org") {
+            pre = document.querySelector("#"+id+" ~ div");
+        }
+        else {
+            pre = document.querySelector("#"+id+" ~ pre");
+        }
+        
         var doc = document.querySelector("#"+id+" ~ p");
 
         if (!doc || !pre) {return;}
         // console.log("find doc");
 
-        tooltip.innerHTML = "<pre>"+pre.innerHTML +"</pre><p>"+ doc.innerHTML +"</p>";
+        if (isGoDoc) {
+            tooltip.innerHTML = "<div>"+pre.innerHTML +"</div><p>"+ doc.innerHTML +"</p>";
+        }
+        else {
+            tooltip.innerHTML = "<pre>"+pre.innerHTML +"</pre><p>"+ doc.innerHTML +"</p>";
+        }
+
         //show
         tooltip.style.display = "block";
 
