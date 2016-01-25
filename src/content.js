@@ -15,7 +15,7 @@
     tooltip.style.width = "50%";
     tooltip.style.position = "fixed";
     tooltip.style["z-index"] = 20;
-    tooltip.style.top = "100px";
+    // tooltip.style.top = "100px";
     tooltip.style.background = "white";
     tooltip.style.border = "1px solid #9E9E9E";
     tooltip.style.padding = "6px";
@@ -23,13 +23,6 @@
     //hide
     tooltip.style.display = "none";
 
-    if (isGoDoc) {
-        tooltip.style.right = 0;
-    }
-    else {
-        tooltip.style["margin-left"] = "20%";
-        tooltip.style["margin-right"] = "20%";
-    }
 
     //add tooltip to body
     document.body.appendChild(tooltip);
@@ -97,6 +90,10 @@
         else {
             tooltip.innerHTML = "<pre>"+pre.innerHTML +"</pre><p>"+ doc.innerHTML +"</p>";
         }
+
+        //get mouse position
+        tooltip.style.left = (e.clientX+50)+"px";
+        tooltip.style.top = (e.clientY-50)+"px";
 
         //show
         tooltip.style.display = "block";

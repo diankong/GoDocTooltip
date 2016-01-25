@@ -2,8 +2,8 @@
    "manifest_version": 2,
    "name": "Go Doc Tooltip",
    "short_name": "gdt",
-   "version": "0.0.3",
-   "description": "When you're at golang's official doc site, it'll show function's description as tooltip on function list",
+   "version": "0.0.4",
+   "description": "Show go doc's function description as tooltip of function list",
    "author": "butaixianran",
    "icons": {
       "128": "icon_128.png"
