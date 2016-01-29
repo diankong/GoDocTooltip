@@ -3,7 +3,7 @@ This is a chrome extension for golang users.
 
 When you're at golang's Doc site, this extension will show function's description as tooltip at function list.
 
-So you don't need to scroll down that long list page anymore.
+So you don't need to scroll down that long listed page anymore.
 
 After installed, you can try here:
 
