@@ -1,7 +1,7 @@
 # GoDocTooltip
 This is a chrome extension for golang users.
 
-When you're at golang's official doc site, this extension will help you to show function's description as tooltip on function list.
+When you're at golang's Doc site, this extension will show function's description as tooltip at function list.
 
 So you don't need to scroll down that long list page anymore.
 
