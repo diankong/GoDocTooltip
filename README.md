@@ -5,6 +5,7 @@ When you're at golang's Doc site, this extension will show function's descriptio
 
 
 So you don't need to scroll down that long page anymore.
+
 =======
 
 After installed, you can try here:
