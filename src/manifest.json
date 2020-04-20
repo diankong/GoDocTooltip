@@ -2,7 +2,7 @@
    "manifest_version": 2,
    "name": "Go Doc Tooltip",
    "short_name": "gdt",
-   "version": "0.0.4",
+   "version": "0.0.5",
    "description": "Show go doc's function description as tooltip of function list",
    "author": "butaixianran",
    "icons": {
@@ -10,7 +10,7 @@
    },
   "content_scripts": [
     {
-      "matches": ["https://golang.org/pkg/*", "https://godoc.org/*"],
+      "matches": ["https://golang.org/pkg/*", "https://godoc.org/*", "https://pkg.go.dev/*"],
       "js": ["content.js"]
     }
   ]
