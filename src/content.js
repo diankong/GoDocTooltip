@@ -4,11 +4,10 @@
 
     //get location
     var isGoDoc = false;
-    if (window.location.hostname === "godoc.org") {
+    if (window.location.hostname === "godoc.org" || window.location.hostname === "pkg.go.dev") {
         isGoDoc = true;
     }
     console.log("isGoDoc: " + isGoDoc);
-
 
     //create a layer for tooltip
     var tooltip = document.createElement("div");
@@ -72,7 +71,7 @@
         // console.log("id is: " + id);
 
         var pre = null;
-        if (window.location.hostname === "godoc.org") {
+        if (isGoDoc) {
             pre = document.querySelector("#"+id+" ~ div");
         }
         else {

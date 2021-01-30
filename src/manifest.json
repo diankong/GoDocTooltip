@@ -2,7 +2,7 @@
    "manifest_version": 2,
    "name": "Go Doc Tooltip",
    "short_name": "gdt",
-   "version": "0.0.5",
+   "version": "0.0.6",
    "description": "Show go doc's function description as tooltip of function list",
    "author": "butaixianran",
    "icons": {
