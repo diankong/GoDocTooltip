@@ -10,9 +10,9 @@ So you don't need to scroll down that long page anymore.
 
 After installed, you can try here:
 
-[https://golang.org/pkg/os/](https://golang.org/pkg/os/)
+[https://pkg.go.dev/os](https://pkg.go.dev/os)
 
-[https://godoc.org/github.com/gin-gonic/gin](https://godoc.org/github.com/gin-gonic/gin)
+[https://pkg.go.dev/github.com/gin-gonic/gin](https://pkg.go.dev/github.com/gin-gonic/gin)
 
 
 [Chrome web store](https://chrome.google.com/webstore/detail/fjbnfgkjpcnhbhfdnegofefhgpjafjjl)
